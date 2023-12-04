@@ -1,0 +1,10 @@
+{
+    "homepage": "https://github.com/SanjayVas/rules_kotlin_jvm",
+    "repository": [
+        "github:SanjayVas/rules_kotlin_jvm"
+    ],
+    "versions": [
+        "0.1.0-rc1",
+        "0.1.0"
+    ]
+}

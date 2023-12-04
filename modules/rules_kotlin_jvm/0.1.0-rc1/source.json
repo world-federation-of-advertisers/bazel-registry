@@ -1,0 +1,9 @@
+{
+  "url": "https://github.com/SanjayVas/rules_kotlin_jvm/archive/refs/tags/v0.1.0-rc1.tar.gz",
+  "integrity": "sha256-f8/TRllvfsNiEVzRHV96RWcmfjePKInlurGbolEntbc=",
+  "strip_prefix": "rules_kotlin_jvm-0.1.0-rc1",
+  "patches": {
+    "module_dot_bazel_version.patch": "sha256-ES25PAaOdVaEdAkeGChQB74FlCrxthFgzsiN4+qqRZs="
+  },
+  "patch_strip": 1
+}

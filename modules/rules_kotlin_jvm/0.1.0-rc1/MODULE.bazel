@@ -1,0 +1,80 @@
+module(
+    name = "rules_kotlin_jvm",
+    repo_name = "wfa_rules_kotlin_jvm",
+    version = "0.1.0-rc1",
+)
+
+bazel_dep(
+    name = "bazel_skylib",
+    version = "1.5.0",
+)
+bazel_dep(
+    name = "rules_proto",
+    version = "5.3.0-21.7",
+)
+bazel_dep(
+    name = "rules_java",
+    version = "6.5.2",
+)
+bazel_dep(
+    name = "rules_kotlin",
+    version = "1.9.0",
+)
+bazel_dep(
+    name = "rules_jvm_external",
+    version = "5.3",
+)
+bazel_dep(
+    name = "protobuf",
+    version = "21.7",
+    repo_name = "com_google_protobuf",
+)
+
+maven = use_extension("@rules_jvm_external//:extensions.bzl", "maven")
+
+KOTLIN_RELEASE_VERSION = "1.8.22"
+
+KOTLINX_COROUTINES_VERSION = "1.7.3"
+
+GRPC_JAVA_VERSION = "1.59.1"
+
+GRPC_KOTLIN_VERSION = "1.4.1"
+
+MAVEN_REPO_NAME = "rules_kotlin_jvm_maven"
+
+maven.artifact(
+    name = MAVEN_REPO_NAME,
+    artifact = "protoc-gen-grpc-kotlin",
+    classifier = "jdk8",
+    group = "io.grpc",
+    version = GRPC_KOTLIN_VERSION,
+)
+maven.install(
+    name = MAVEN_REPO_NAME,
+    artifacts = [
+        "org.jetbrains.kotlin:kotlin-stdlib:" + KOTLIN_RELEASE_VERSION,
+        "org.jetbrains.kotlin:kotlin-stdlib-common:" + KOTLIN_RELEASE_VERSION,
+        "org.jetbrains.kotlin:kotlin-reflect:" + KOTLIN_RELEASE_VERSION,
+        "org.jetbrains.kotlin:kotlin-test:" + KOTLIN_RELEASE_VERSION,
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:" + KOTLINX_COROUTINES_VERSION,
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:" + KOTLINX_COROUTINES_VERSION,
+        "io.grpc:grpc-api:" + GRPC_JAVA_VERSION,
+        "io.grpc:grpc-protobuf:" + GRPC_JAVA_VERSION,
+        "io.grpc:grpc-stub:" + GRPC_JAVA_VERSION,
+        "io.grpc:grpc-kotlin-stub:" + GRPC_KOTLIN_VERSION,
+        "com.google.protobuf:protobuf-kotlin:3.21.12",
+    ],
+    fetch_sources = True,
+    strict_visibility = True,
+)
+use_repo(maven, MAVEN_REPO_NAME)
+
+rules_kotlin_jvm_dependencies = use_extension(
+    "//:rules_kotlin_jvm_dependencies.bzl",
+    "rules_kotlin_jvm_dependencies",
+)
+rules_kotlin_jvm_dependencies.grpc_java_plugin_version(
+    sha256 = "d0345a5508959633f086f42f55782b64913aea890dccaa35ffbf7fe9da0f4463",
+    version = GRPC_JAVA_VERSION,
+)
+use_repo(rules_kotlin_jvm_dependencies, "protoc_gen_grpc_java")
