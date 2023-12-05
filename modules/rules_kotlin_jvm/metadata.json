@@ -5,6 +5,9 @@
     ],
     "versions": [
         "0.1.0-rc1",
-        "0.1.0"
-    ]
+        "0.1.0-rc2",
+    ],
+    "yanked_versions": {
+        "0.1.0-rc1": "gRPC rules are broken"
+    }
 }
