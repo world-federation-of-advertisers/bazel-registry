@@ -1,0 +1,9 @@
+{
+    "url": "https://github.com/world-federation-of-advertisers/rules_swig/archive/refs/tags/v0.1.0-rc1.tar.gz",
+    "integrity": "sha256-eVyBDqmwZRiex5iEOW+hRlC3ewcD0CaMP261Wf/wBSs=",
+    "strip_prefix": "rules_swig-0.1.0-rc1",
+    "patch_strip": 0,
+    "patches": {
+        "module_dot_bazel.patch": "sha256-f5pZQUsLRTc+Xfpg/ebh8wAh3vuCdd/x7baq2jdPly8="
+    }
+}
