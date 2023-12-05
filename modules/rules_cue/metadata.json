@@ -1,0 +1,11 @@
+{
+    "homepage": "https://github.com/world-federation-of-advertisers/rules_cue",
+    "maintainers": [],
+    "repository": [
+        "github:world-federation-of-advertisers/rules_cue"
+    ],
+    "versions": [
+        "0.4.0-rc1"
+    ],
+    "yanked_versions": {}
+}
