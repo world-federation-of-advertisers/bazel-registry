@@ -1,0 +1,11 @@
+{
+    "homepage": "https://github.com/world-federation-of-advertisers/common-cpp",
+    "maintainers": [],
+    "repository": [
+        "github:world-federation-of-advertisers/common-cpp"
+    ],
+    "versions": [
+        "0.11.0-rc1"
+    ],
+    "yanked_versions": {}
+}

@@ -1,0 +1,10 @@
+--- MODULE.bazel
++++ MODULE.bazel
+@@ -1,6 +1,7 @@
+ module(
+     name = "common-cpp",
+     repo_name = "wfa_common_cpp",
++    version = "0.11.0-rc1",
+ )
+ 
+ bazel_dep(
