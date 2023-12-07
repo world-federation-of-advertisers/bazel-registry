@@ -6,6 +6,9 @@
     ],
     "versions": [
         "0.1.0-rc1",
+        "0.1.0-rc2"
     ],
-    "yanked_versions": {}
+    "yanked_versions": {
+        "0.1.0-rc1": "Bad rules_java dependency"
+    }
 }

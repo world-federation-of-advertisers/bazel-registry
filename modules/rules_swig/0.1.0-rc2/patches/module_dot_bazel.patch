@@ -1,0 +1,10 @@
+--- MODULE.bazel
++++ MODULE.bazel
+@@ -1,6 +1,7 @@
+ module(
+     name = "rules_swig",
+     repo_name = "wfa_rules_swig",
++    version = "0.1.0-rc2",
+ )
+ 
+ bazel_dep(
