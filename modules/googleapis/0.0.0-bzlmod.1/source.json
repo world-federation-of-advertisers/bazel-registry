@@ -1,0 +1,9 @@
+{
+    "url": "https://github.com/googleapis/googleapis/archive/a5c9ffcfbd3212b98ffeeae5f77915ca006fe43d.tar.gz",
+    "integrity": "sha256-pQ5rhprzQKoRIPCti4T+CirkRby+Fy1dAkR5dAo1zdk=",
+    "strip_prefix": "googleapis-a5c9ffcfbd3212b98ffeeae5f77915ca006fe43d",
+    "patches": {
+        "module.patch": "sha256-ug2ESUHQ6lWd2Rnj7iPp/s4NLglqJd9UgTNCNne3K7s="
+    },
+    "patch_strip": 1
+}

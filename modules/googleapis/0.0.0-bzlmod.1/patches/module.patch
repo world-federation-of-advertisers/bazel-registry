@@ -1,0 +1,60 @@
+diff -r 5aa42bf25259 -r 7094a89bee42 MODULE.bazel
+--- /dev/null	Thu Jan 01 00:00:00 1970 +0000
++++ b/MODULE.bazel	Mon Dec 11 14:25:44 2023 -0800
+@@ -0,0 +1,18 @@
++module(
++    name = "googleapis",
++    version = "0.0.0-bzlmod.1",
++    repo_name = "com_google_googleapis",
++)
++
++bazel_dep(
++    name = "rules_proto",
++    version = "5.3.0-21.7",
++)
++bazel_dep(
++    name = "protobuf",
++    version = "21.7",
++    repo_name = "com_google_protobuf",
++)
++
++imports = use_extension(":extensions.bzl", "imports")
++use_repo(imports, "com_google_googleapis_imports")
+diff -r 5aa42bf25259 -r 7094a89bee42 extensions.bzl
+--- /dev/null	Thu Jan 01 00:00:00 1970 +0000
++++ b/extensions.bzl	Mon Dec 11 14:25:44 2023 -0800
+@@ -0,0 +1,34 @@
++"""Module extension for generating imports."""
++
++load(
++    "@com_google_googleapis//:repository_rules.bzl",
++    "switched_rules_by_language",
++)
++
++_types_tag = tag_class(
++    attrs = {
++        "java": attr.bool(),
++        "cc": attr.bool(),
++    },
++)
++
++def _imports_impl(mctx):
++    java = False
++    cc = False
++    for module in mctx.modules:
++        for types in module.tags.types:
++            java = java or types.java
++            cc = cc or types.cc
++
++    switched_rules_by_language(
++        name = "com_google_googleapis_imports",
++        java = java,
++        cc = cc,
++    )
++
++imports = module_extension(
++    implementation = _imports_impl,
++    tag_classes = {
++        "types": _types_tag,
++    },
++)

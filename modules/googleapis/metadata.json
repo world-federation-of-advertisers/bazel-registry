@@ -1,0 +1,11 @@
+{
+    "homepage": "https://github.com/googleapis/googleapis/",
+    "maintainers": [],
+    "repository": [
+        "github:googleapis/googleapis"
+    ],
+    "versions": [
+        "0.0.0-bzlmod.1"
+    ],
+    "yanked_versions": {}
+}
