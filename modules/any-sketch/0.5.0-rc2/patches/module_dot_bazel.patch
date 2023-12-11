@@ -1,0 +1,10 @@
+--- MODULE.bazel
++++ MODULE.bazel
+@@ -1,6 +1,7 @@
+ module(
+     name = "any-sketch",
+     repo_name = "any_sketch",
++    version = "0.5.0-rc2",
+ )
+ 
+ BORINGSSL_VERSION = "0.0.0-20230215-5c22014"
