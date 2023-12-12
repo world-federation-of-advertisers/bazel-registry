@@ -1,0 +1,11 @@
+{
+    "homepage": "https://github.com/world-federation-of-advertisers/cross-media-measurement-api",
+    "maintainers": [],
+    "repository": [
+        "github:world-federation-of-advertisers/cross-media-measurement-api"
+    ],
+    "versions": [
+        "0.54.0-rc2"
+    ],
+    "yanked_versions": {}
+}
