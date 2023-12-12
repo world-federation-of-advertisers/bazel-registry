@@ -1,0 +1,9 @@
+{
+    "url": "https://github.com/world-federation-of-advertisers/common-cpp/archive/refs/tags/v0.11.0.tar.gz",
+    "integrity": "sha256-/BI6tO3GbCh+86hOQGC/spQdgF0Lq3q040I+KaDb+kc=",
+    "strip_prefix": "common-cpp-0.11.0",
+    "patch_strip": 0,
+    "patches": {
+        "module_dot_bazel.patch": "sha256-F1P8U3HXQ1PcB7N6J50X9YdAmsJRICBEBCKhl9RIXKo="
+    }
+}
