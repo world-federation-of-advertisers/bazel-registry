@@ -1,0 +1,9 @@
+{
+    "url": "https://github.com/grpc-ecosystem/grpc-gateway/archive/refs/tags/v2.18.1.tar.gz",
+    "integrity": "sha256-RA4sso9buEFp8pVsgi98U3QLF9lrxR4vN47O0cD2Mhk=",
+    "strip_prefix": "grpc-gateway-2.18.1",
+    "patches": {
+        "module.patch": "sha256-qspH31BgGjHTLSVvXs5qdgVmYJhB7Gen7KHfOtqiBHo="
+    },
+    "patch_strip": 1
+}
