@@ -1,0 +1,9 @@
+{
+    "url": "https://github.com/google/private-join-and-compute/archive/e028e59420a9c36328705ed5064408de03d229a8.tar.gz",
+    "integrity": "sha256-sI61R4g1yYNoXcdJ3gNe+ZW4Z0LtmrfNpjQQEyuXFvM=",
+    "strip_prefix": "private-join-and-compute-e028e59420a9c36328705ed5064408de03d229a8",
+    "patches": {
+        "module.patch": "sha256-htWMMBmg6UwsZZBKQj3PmlqeHp7Eu/G5Jd3FAtpxoU4="
+    },
+    "patch_strip": 1
+}

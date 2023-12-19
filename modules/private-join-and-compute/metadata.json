@@ -1,0 +1,11 @@
+{
+    "homepage": "https://github.com/google/private-join-and-compute",
+    "maintainers": [],
+    "repository": [
+        "github:google/private-join-and-compute"
+    ],
+    "versions": [
+        "0.0.0-20230417-e028e59"
+    ],
+    "yanked_versions": {}
+}

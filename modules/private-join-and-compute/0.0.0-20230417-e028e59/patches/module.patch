@@ -1,0 +1,47 @@
+diff -r 3eeca0d2ac4e -r 8e9ed76ef52c MODULE.bazel
+--- /dev/null	Thu Jan 01 00:00:00 1970 +0000
++++ b/MODULE.bazel	Mon Dec 18 14:56:37 2023 -0800
+@@ -0,0 +1,43 @@
++module(
++    name = "private-join-and-compute",
++    version = "0.0.0-20230417-e028e59",
++)
++
++bazel_dep(
++    name = "grpc",
++    version = "1.48.1.bcr.2",
++    repo_name = "com_github_grpc_grpc",
++)
++bazel_dep(
++    name = "protobuf",
++    version = "21.7",
++    repo_name = "com_google_protobuf",
++)
++bazel_dep(
++    name = "rules_cc",
++    version = "0.0.9",
++)
++bazel_dep(
++    name = "rules_proto",
++    version = "5.3.0-21.7",
++)
++bazel_dep(
++    name = "abseil-cpp",
++    version = "20230802.0.bcr.1",
++    repo_name = "com_google_absl",
++)
++bazel_dep(
++    name = "googletest",
++    version = "1.14.0",
++    repo_name = "com_github_google_googletest",
++)
++bazel_dep(
++    name = "boringssl",
++    version = "0.0.0-20230215-5c22014",
++)
++
++# Force use of newer version of boringssl.
++single_version_override(
++    module_name = "boringssl",
++    version = "0.0.0-20230215-5c22014",
++)
