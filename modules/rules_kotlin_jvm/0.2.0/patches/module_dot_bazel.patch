@@ -1,0 +1,9 @@
+--- MODULE.bazel
++++ MODULE.bazel
+@@ -1,5 +1,6 @@
+ module(
+     name = "rules_kotlin_jvm",
++    version = "0.2.0",
+     repo_name = "wfa_rules_kotlin_jvm",
+ )
+ 

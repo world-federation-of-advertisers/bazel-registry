@@ -1,0 +1,9 @@
+{
+    "url": "https://github.com/world-federation-of-advertisers/rules_kotlin_jvm/archive/refs/tags/v0.2.0.tar.gz",
+    "integrity": "sha256-4l0C7pGDSqBmSrQ60WFhgGQle73T4Sg8+Ai4hrQlD+Q=",
+    "strip_prefix": "rules_kotlin_jvm-0.2.0",
+    "patch_strip": 0,
+    "patches": {
+        "module_dot_bazel.patch": "sha256-y6q6S3zhb2hHEXIF2WiKeL9Egj0eyLd1y3djyYowiTE="
+    }
+}
