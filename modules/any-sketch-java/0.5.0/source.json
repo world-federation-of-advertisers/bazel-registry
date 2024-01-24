@@ -1,0 +1,9 @@
+{
+    "url": "https://github.com/world-federation-of-advertisers/any-sketch-java/archive/refs/tags/v0.5.0.tar.gz",
+    "integrity": "sha256-Mq4xOfx5+6OZGzPg77DLbjjmKsbU52M+HIj3jhDA8AY=",
+    "strip_prefix": "any-sketch-java-0.5.0",
+    "patch_strip": 0,
+    "patches": {
+        "module_dot_bazel.patch": "sha256-/VndEaP9VPo9tjN8SYlfDxNmIaSiAIRpvWFS/goRezc="
+    }
+}
