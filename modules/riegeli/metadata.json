@@ -1,0 +1,11 @@
+{
+    "homepage": "https://github.com/google/riegeli",
+    "maintainers": [],
+    "repository": [
+        "github:google/riegeli"
+    ],
+    "versions": [
+        "0.0.0-20240122-ac83dce"
+    ],
+    "yanked_versions": {}
+}

@@ -1,0 +1,57 @@
+module(
+    name = "riegeli",
+    version = "0.0.0-20240122-ac83dce",
+    bazel_compatibility = [">=7.0.0"],
+)
+
+bazel_dep(
+    name = "platforms",
+    version = "0.0.8",
+)
+bazel_dep(
+    name = "rules_proto",
+    version = "5.3.0-21.7",
+)
+bazel_dep(
+    name = "protobuf",
+    version = "21.7",
+    repo_name = "com_google_protobuf",
+)
+bazel_dep(
+    name = "abseil-cpp",
+    version = "20240116.0",
+    repo_name = "com_google_absl",
+)
+
+http_archive = use_repo_rule("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+
+http_archive(
+    name = "org_brotli",
+    sha256 = "e720a6ca29428b803f4ad165371771f5398faba397edf6778837a18599ea13ff",
+    strip_prefix = "brotli-1.1.0",
+    urls = ["https://github.com/google/brotli/archive/refs/tags/v1.1.0.tar.gz"],
+)
+
+http_archive(
+    name = "net_zstd",
+    build_file = "//third_party:net_zstd.BUILD",
+    sha256 = "b6c537b53356a3af3ca3e621457751fa9a6ba96daf3aebb3526ae0f610863532",
+    strip_prefix = "zstd-1.4.5/lib",
+    urls = ["https://github.com/facebook/zstd/archive/v1.4.5.zip"],
+)
+
+http_archive(
+    name = "highwayhash",
+    build_file = "//third_party:highwayhash.BUILD",
+    sha256 = "cf891e024699c82aabce528a024adbe16e529f2b4e57f954455e0bf53efae585",
+    strip_prefix = "highwayhash-276dd7b4b6d330e4734b756e97ccfb1b69cc2e12",
+    urls = ["https://github.com/google/highwayhash/archive/276dd7b4b6d330e4734b756e97ccfb1b69cc2e12.zip"],  # 2019-02-22
+)
+
+http_archive(
+    name = "snappy",
+    build_file = "//third_party:snappy.BUILD",
+    sha256 = "49d831bffcc5f3d01482340fe5af59852ca2fe76c3e05df0e67203ebbe0f1d90",
+    strip_prefix = "snappy-1.1.10",
+    urls = ["https://github.com/google/snappy/archive/refs/tags/1.1.10.tar.gz"],
+)
