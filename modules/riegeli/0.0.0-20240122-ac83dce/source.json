@@ -4,6 +4,6 @@
     "strip_prefix": "riegeli-ac83dce9b9b632b6b3fcf55872f42b6b551cc47e",
     "patch_strip": 0,
     "patches": {
-        "module_dot_bazel.patch": "sha256-f/4zBzdEidPd9TUxuunbwEKFThASsRHo961J4MiKqyE="
+        "module_dot_bazel.patch": "sha256-2dhpAISoebmwSWvtFMSyDI+D0St0+sdsUpr99FebqiI="
     }
 }
