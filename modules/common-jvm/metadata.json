@@ -5,7 +5,8 @@
         "github:world-federation-of-advertisers/common-jvm"
     ],
     "versions": [
-        "0.74.0"
+        "0.74.0",
+        "0.74.1"
     ],
     "yanked_versions": {}
 }
