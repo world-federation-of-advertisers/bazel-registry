@@ -1,0 +1,11 @@
+{
+    "homepage": "https://github.com/world-federation-of-advertisers/consent-signaling-client",
+    "maintainers": [],
+    "repository": [
+        "github:world-federation-of-advertisers/consent-signaling-client"
+    ],
+    "versions": [
+        "0.20.0"
+    ],
+    "yanked_versions": {}
+}

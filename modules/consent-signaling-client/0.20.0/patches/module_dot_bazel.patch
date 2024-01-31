@@ -1,0 +1,9 @@
+--- MODULE.bazel
++++ MODULE.bazel
+@@ -1,5 +1,6 @@
+ module(
+     name = "consent-signaling-client",
++    version = "0.20.0",
+ )
+ 
+ # WFA registry deps.
