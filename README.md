@@ -16,9 +16,11 @@ modification.
 
 ### Using `add_module.py`
 
-1.  Copy the `MODULE.bazel` for the module, specifying the version.
+1.  Make a copy of the `MODULE.bazel` file from the module source, editing it to
+    specify the correct version.
 2.  Run the tool, following the input prompts.
-    *   Use the file from (1) when prompted.
+    *   Choose Yes at the prompt for specifying a MODULE.bazel file, specifying
+        the copy from (1).
     *   Choose No for the remaining Yes/No prompts.
     *   When asked for build targets, enter any string as the WFA registry does
         not use this.
