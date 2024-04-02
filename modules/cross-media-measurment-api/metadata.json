@@ -1,0 +1,11 @@
+{
+    "homepage": "http://wfa.net",
+    "maintainers": [],
+    "repository": [
+        "github:world-federation-of-advertisers/cross-media-measurement-api"
+    ],
+    "versions": [
+        "0.61.0"
+    ],
+    "yanked_versions": {}
+}
