@@ -1,0 +1,9 @@
+{
+    "url": "https://github.com/world-federation-of-advertisers/any-sketch/archive/refs/tags/v0.8.1.tar.gz",
+    "integrity": "sha256-yFQBbd6olKzXsNoonzX5IxPvtm04GxzCqzr/wNuhGko=",
+    "strip_prefix": "any-sketch-0.8.1",
+    "patch_strip": 0,
+    "patches": {
+        "module_dot_bazel.patch": "sha256-7BRUo+2JvhiM6kvDTs9bcRxwUOADN8DKqYPwdsp0p7E="
+    }
+}
