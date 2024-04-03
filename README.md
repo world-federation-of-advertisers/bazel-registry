@@ -16,14 +16,22 @@ modification.
 
 ### Using `add_module.py`
 
-1.  Copy the `MODULE.bazel` for the module, specifying the version.
+1.  Make a copy of the `MODULE.bazel` file from the module source, editing it to
+    specify the correct version.
 2.  Run the tool, following the input prompts.
-    *   Use the file from (1) when prompted.
-    *   Choose No for the remaining Yes/No prompts.
+    *   Specify the same module name and version as your `MODULE.bazel` copy
+        from (1).
+    *   If your source archive has a prefix (e.g. release archives from GitHub),
+        make sure to specify the appropriate strip_prefix value.
+    *   Choose No for all Yes/No prompts except where specified below.
+    *   Choose Yes at the prompt for specifying a MODULE.bazel file, specifying
+        the file path of the copy from (1).
     *   When asked for build targets, enter any string as the WFA registry does
         not use this.
     *   Warnings related to BCR maintainer review and use of GitHub source
         archives can be ignored.
+    *   You should only be prompted to add a homepage URL for modules that are
+        new to this registry.
 3.  Create a pull request for the generated files, excluding files that are
     ignored by `.gitignore`.
 
