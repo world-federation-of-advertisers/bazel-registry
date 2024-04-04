@@ -1,0 +1,10 @@
+--- MODULE.bazel
++++ MODULE.bazel
+@@ -1,6 +1,7 @@
+ module(
+     name = "any-sketch-java",
+     repo_name = "any_sketch_java",
++    version = "0.6.0",
+ )
+ 
+ TRUTH_VERSION = "1.1.2"
