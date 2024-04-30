@@ -15,7 +15,10 @@
         "0.80.0",
         "0.81.0",
         "0.81.1",
-        "0.82.0"
+        "0.82.0",
+        "0.82.1"
     ],
-    "yanked_versions": {}
+    "yanked_versions": {
+        "0.82.0": "Spanner testing libraries are broken"
+    }
 }
