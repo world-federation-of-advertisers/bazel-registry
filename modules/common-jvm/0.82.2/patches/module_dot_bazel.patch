@@ -1,0 +1,11 @@
+--- MODULE.bazel
++++ MODULE.bazel
+@@ -2,6 +2,8 @@
+     name = "common-jvm",
+     bazel_compatibility = [">=7.0.0"],
+     repo_name = "wfa_common_jvm",
++    version = "0.82.2",
++
+ )
+ 
+ KOTLINX_COROUTINES_VERSION = "1.7.3"
