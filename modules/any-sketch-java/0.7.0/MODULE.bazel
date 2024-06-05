@@ -1,6 +1,7 @@
 module(
     name = "any-sketch-java",
     repo_name = "any_sketch_java",
+    version = "0.7.0",
 )
 
 TRUTH_VERSION = "1.1.2"
@@ -26,10 +27,6 @@ bazel_dep(
     version = "0.1.0",
     repo_name = "wfa_rules_swig",
 )
-git_override(
-    module_name = "rules_swig",
-    remote = "https://github.com/world-federation-of-advertisers/rules_swig.git",
-    commit = "24daed11af4d4bc109fae9378a68d116f23eb18f")
 bazel_dep(
     name = "any-sketch",
     version = "0.8.1",
