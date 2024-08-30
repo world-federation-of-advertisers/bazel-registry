@@ -3,7 +3,8 @@
     "maintainers": [],
     "repository": [],
     "versions": [
-        "1.5.13"
+        "1.5.13",
+        "1.5.23"
     ],
     "yanked_versions": {}
 }
