@@ -1,0 +1,11 @@
+{
+    "homepage": "https://github.com/bazelbuild/rules_jvm_external",
+    "maintainers": [],
+    "repository": [
+        "github:bazelbuild/rules_jvm_external"
+    ],
+    "versions": [
+        "6.2.bzlmod.1"
+    ],
+    "yanked_versions": {}
+}

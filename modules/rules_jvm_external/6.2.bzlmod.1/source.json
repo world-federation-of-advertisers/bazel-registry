@@ -1,0 +1,10 @@
+{
+    "url": "https://github.com/bazelbuild/rules_jvm_external/releases/download/6.2/rules_jvm_external-6.2.tar.gz",
+    "integrity": "sha256-gIy1wwtfcNEqKnRaKe3EZyj9NfoZXBdipZa2OunOvgU=",
+    "strip_prefix": "rules_jvm_external-6.2",
+    "patches": {
+        "maven_install.patch": "sha256-io2iGFrgwR6Igu3JS7v3lftj7wBc26Y90QU+burv354=",
+        "module_dot_bazel.patch": "sha256-KVxtDkX7Y1nlynQVc7o7x1hryTr8Jx462NaGMk9gImU="
+    },
+    "patch_strip": 1
+}

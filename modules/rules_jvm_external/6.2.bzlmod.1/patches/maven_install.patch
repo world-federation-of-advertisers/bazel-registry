@@ -1,0 +1,17 @@
+diff --git a/private/extensions/maven.bzl b/private/extensions/maven.bzl
+index 0720d37..3c21d13 100644
+--- a/private/extensions/maven.bzl
++++ b/private/extensions/maven.bzl
+@@ -433,12 +433,6 @@ def _maven_impl(mctx):
+                 ignore_empty_files = repo.get("ignore_empty_files"),
+                 additional_coursier_options = repo.get("additional_coursier_options"),
+             )
+-        else:
+-            # Only the coursier resolver allows the lock file to be omitted.
+-            unpinned_maven_pin_command_alias(
+-                name = "unpinned_" + name,
+-                alias = "@%s//:pin" % name,
+-            )
+ 
+         if repo.get("generate_compat_repositories") and not repo.get("lock_file"):
+             seen = _generate_compat_repos(name, compat_repos, artifacts)
