@@ -1,0 +1,94 @@
+module(
+    name = "rules_kotlin_jvm",
+    version = "0.5.0",
+    repo_name = "wfa_rules_kotlin_jvm",
+)
+
+KOTLIN_RELEASE_VERSION = "1.9.25"  # Compatible with rules_kotlin version.
+
+KOTLINX_COROUTINES_VERSION = "1.8.1"
+
+GRPC_JAVA_VERSION = "1.66.0"
+
+GRPC_KOTLIN_VERSION = "1.4.1"
+
+PROTOBUF_JAVA_VERSION = "4.27.5"  # Compatible with protobuf version.
+
+bazel_dep(
+    name = "bazel_skylib",
+    version = "1.7.1",
+)
+bazel_dep(
+    name = "rules_java",
+    version = "8.6.2",
+)
+bazel_dep(
+    name = "rules_kotlin",
+    version = "1.9.6",
+)
+bazel_dep(
+    name = "rules_jvm_external",
+    version = "6.6",
+)
+bazel_dep(
+    name = "protobuf",
+    version = "27.3",
+    repo_name = "com_google_protobuf",
+)
+
+maven = use_extension("@rules_jvm_external//:extensions.bzl", "maven")
+maven.artifact(
+    artifact = "protoc-gen-grpc-kotlin",
+    classifier = "jdk8",
+    group = "io.grpc",
+    version = GRPC_KOTLIN_VERSION,
+)
+maven.artifact(
+    testonly = True,
+    artifact = "kotlin-test",
+    group = "org.jetbrains.kotlin",
+)
+maven.install(
+    artifacts = [
+        "org.jetbrains.kotlin:kotlin-stdlib",
+        "org.jetbrains.kotlin:kotlin-stdlib-common",
+        "org.jetbrains.kotlin:kotlin-reflect",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm",
+        "io.grpc:grpc-api",
+        "io.grpc:grpc-protobuf",
+        "io.grpc:grpc-stub",
+        "io.grpc:grpc-kotlin-stub:" + GRPC_KOTLIN_VERSION,
+        "com.google.protobuf:protobuf-java",
+        "com.google.protobuf:protobuf-kotlin:" + PROTOBUF_JAVA_VERSION,
+    ],
+    boms = [
+        "org.jetbrains.kotlin:kotlin-bom:" + KOTLIN_RELEASE_VERSION,
+        "org.jetbrains.kotlinx:kotlinx-coroutines-bom:" + KOTLINX_COROUTINES_VERSION,
+        "com.google.protobuf:protobuf-bom:" + PROTOBUF_JAVA_VERSION,
+        "io.grpc:grpc-bom:" + GRPC_JAVA_VERSION,
+    ],
+    exclusions = [
+        # protobuf-java and protobuf-javalite cannot coexist.
+        "com.google.protobuf:protobuf-javalite",
+    ],
+    fail_if_repin_required = True,
+    fetch_sources = True,  # For IDE integration.
+    lock_file = "//:maven_install.json",
+    resolver = "maven",
+    strict_visibility = True,
+)
+use_repo(maven, "maven")
+
+http_file = use_repo_rule("@bazel_tools//tools/build_defs/repo:http.bzl", "http_file")
+
+http_file(
+    name = "protoc_gen_grpc_java",
+    executable = True,
+    sha256 = "654626545f36b0cda5179e4b46c7bde2a8eefee8d265d346967c8542537137a8",
+    url = "https://repo1.maven.org/maven2/io/grpc/protoc-gen-grpc-java/{version}/protoc-gen-grpc-java-{version}-linux-x86_64.exe".format(
+        version = GRPC_JAVA_VERSION,
+    ),
+)
+
+register_toolchains("//kotlin:kotlin_toolchain")
