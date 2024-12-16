@@ -1,0 +1,9 @@
+{
+    "url": "https://github.com/world-federation-of-advertisers/virtual-people-common/archive/refs/tags/v0.5.0.tar.gz",
+    "integrity": "sha256-RImPBACAayBH0+2PawewjqUR2OiaCSf6iPq5A3SqqEE=",
+    "strip_prefix": "virtual-people-common-0.5.0",
+    "patch_strip": 0,
+    "patches": {
+        "module_dot_bazel.patch": "sha256-Cc7jOw0JFoaLkfM1ngIM2r5zWWgcIFYM6o2g3FPNscw="
+    }
+}
