@@ -1,0 +1,11 @@
+{
+    "homepage": "https://github.com/google/shell-encryption",
+    "maintainers": [],
+    "repository": [
+        "github:google/shell-encryption"
+    ],
+    "versions": [
+        "0.0.0-20241214-b381c4e"
+    ],
+    "yanked_versions": {}
+}
