@@ -34,7 +34,8 @@
         "0.97.0",
         "0.98.0",
         "0.99.0",
-        "0.99.1"
+        "0.99.1",
+        "0.99.2"
     ],
     "yanked_versions": {
         "0.82.0": "Spanner testing libraries are broken"
