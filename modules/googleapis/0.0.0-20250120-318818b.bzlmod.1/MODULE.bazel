@@ -1,0 +1,15 @@
+module(
+    name = "googleapis",
+    version = "0.0.0-20250120-318818b.bzlmod.1",
+    bazel_compatibility = [">=7.4.0"],
+    repo_name = "com_google_googleapis",
+)
+
+bazel_dep(
+    name = "protobuf",
+    version = "29.3",
+    repo_name = "com_google_protobuf",
+)
+
+imports = use_extension(":extensions.bzl", "imports")
+use_repo(imports, "com_google_googleapis_imports")

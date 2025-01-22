@@ -1,0 +1,15 @@
+diff --git a/.bazeliskrc b/.bazeliskrc
+deleted file mode 100644
+index 74cd900fb..000000000
+--- a/.bazeliskrc
++++ /dev/null
+@@ -1,2 +0,0 @@
+-# See https://github.com/bazelbuild/bazelisk
+-USE_BAZEL_VERSION=6.3.0
+diff --git a/.bazelversion b/.bazelversion
+new file mode 100644
+index 000000000..815da58b7
+--- /dev/null
++++ b/.bazelversion
+@@ -0,0 +1 @@
++7.4.1
