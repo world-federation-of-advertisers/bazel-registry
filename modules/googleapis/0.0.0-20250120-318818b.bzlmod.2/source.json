@@ -1,0 +1,12 @@
+{
+    "url": "https://github.com/googleapis/googleapis/archive/318818b22ec2bd44ebe43fe662418b7dff032abf.tar.gz",
+    "integrity": "sha256-xUKAk6AF33iZAH1oCdDMMiNYkVTHjZUmoTcGPYAunTE=",
+    "strip_prefix": "googleapis-318818b22ec2bd44ebe43fe662418b7dff032abf",
+    "patches": {
+        "bazel_version.patch": "sha256-jxuYkL93V27eNAcRRgg14ycWVwzgZP/Ix+I6GEQQois=",
+        "repo_rules.patch": "sha256-35t5B4ObR2GnBhHGVOFjf+8GEO06eydWvZXmokK7CHk=",
+        "extensions.patch": "sha256-4Fu3MCvIjD4aixmDki6ktodMszpxIgk58RtjgS8iS7Y=",
+        "module.patch": "sha256-T5N833tyoC6RHe/2yEhEgcUxgwJT3I5SRbG0AjaN8w0="
+    },
+    "patch_strip": 1
+}
