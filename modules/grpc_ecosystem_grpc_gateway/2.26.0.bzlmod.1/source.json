@@ -1,0 +1,9 @@
+{
+    "url": "https://github.com/grpc-ecosystem/grpc-gateway/archive/refs/tags/v2.26.0.tar.gz",
+    "integrity": "sha256-5cQ5GKRTtt/xHnG47ZgTkHJPOfoUA65W0vDlzBYGEx4=",
+    "strip_prefix": "grpc-gateway-2.26.0",
+    "patches": {
+        "wfa_module.patch": "sha256-5tDVdC7oYeorPlll/Yc3Qvweto7oOI+kHUHXpG0bKgg="
+    },
+    "patch_strip": 1
+}
