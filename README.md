@@ -39,6 +39,10 @@ If you get an error related to `presubmit.yml` not being found, you can add an
 empty file to the specified location and re-run the tool specifying the
 generated `.json` file using the `--input` option.
 
+If you get an error indicating that MODULE.bazel does not match the extracted one
+and that a patch is necessary, you can confirm that a patch was generated and put
+in the patches directory of the newly created version and ignore the error.
+
 ### Manual testing
 
 Update a project that depends on the module to use the newly-added version.
