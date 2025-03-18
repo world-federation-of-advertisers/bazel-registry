@@ -1,0 +1,9 @@
+--- MODULE.bazel.1	2025-03-18 16:48:26.816157124 -0400
++++ M2.bazel	2025-03-18 16:49:09.317302100 -0400
+@@ -1,5 +1,6 @@
+ module(
+     name = "wfa-local-market-config",
++    version = "0.1.0",
+     repo_name = "wfa_local_market_config",
+ )
+ 
