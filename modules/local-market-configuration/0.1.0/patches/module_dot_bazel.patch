@@ -2,8 +2,8 @@
 +++ MODULE.bazel
 @@ -1,5 +1,6 @@
  module(
-     name = "wfa-local-market-config",
+     name = "wfa-local-market-configuration",
 +    version = "0.1.0",
-     repo_name = "wfa_local_market_config",
+     repo_name = "wfa_local_market_configuration",
  )
  
