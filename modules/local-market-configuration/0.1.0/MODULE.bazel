@@ -1,0 +1,34 @@
+module(
+    name = "wfa-local-market-config",
+    version = "0.1.0",
+    repo_name = "wfa_local_market_config",
+)
+
+#  --- WFA registry modules. ---
+
+bazel_dep(
+    name = "rules_kotlin_jvm",
+    version = "0.6.0",
+    repo_name = "wfa_rules_kotlin_jvm",
+)
+bazel_dep(
+    name = "cross-media-measurement-api",
+    version = "0.72.0",
+    repo_name = "wfa_measurement_proto",
+)
+
+# --- Bazel Central Registry modules. ---
+
+bazel_dep(
+    name = "protobuf",
+    version = "29.3",
+    repo_name = "com_google_protobuf",
+)
+bazel_dep(
+    name = "rules_java",
+    version = "8.7.1",
+)
+bazel_dep(
+    name = "rules_jvm_external",
+    version = "6.6",
+)
