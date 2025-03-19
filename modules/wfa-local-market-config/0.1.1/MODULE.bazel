@@ -1,7 +1,7 @@
 module(
-    name = "local-market-configuration",
-    version = "0.1.0",
-    repo_name = "wfa_local_market_configuration",
+    name = "wfa-local-market-config",
+    version = "0.1.1",
+    repo_name = "wfa_local_market_config",
 )
 
 #  --- WFA registry modules. ---
@@ -31,4 +31,8 @@ bazel_dep(
 bazel_dep(
     name = "rules_jvm_external",
     version = "6.6",
+)
+bazel_dep(
+    name = "rules_proto",
+    version = "7.1.0",
 )
