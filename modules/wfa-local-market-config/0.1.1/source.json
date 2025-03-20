@@ -1,0 +1,9 @@
+{
+    "url": "https://github.com/world-federation-of-advertisers/local-market-configuration/archive/refs/tags/v0.1.1.tar.gz",
+    "integrity": "sha256-TAjnc2ZvkD+i30UkyXNxQcsHezudBiRitKsi+fNJqIU=",
+    "strip_prefix": "local-market-configuration-0.1.1",
+    "patch_strip": 0,
+    "patches": {
+        "module_dot_bazel.patch": "sha256-92z6ye+YN4A56RL9H/OF1iI/YHYXmH7NIxpau8+q2DU="
+    }
+}
