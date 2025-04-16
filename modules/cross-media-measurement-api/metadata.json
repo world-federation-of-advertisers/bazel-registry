@@ -24,7 +24,10 @@
         "0.71.1",
         "0.72.0",
         "0.73.0",
-        "0.74.0"
+        "0.74.0",
+        "0.74.1"
     ],
-    "yanked_versions": {}
+    "yanked_versions": {
+        "0.74.0": "Broken http annotations"
+    }
 }
