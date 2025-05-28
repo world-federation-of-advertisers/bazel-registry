@@ -4,6 +4,6 @@
     "strip_prefix": "cross-media-measurement-api-0.78.0",
     "patch_strip": 0,
     "patches": {
-        "module_dot_bazel.patch": "sha256-huPrheyH3cRjSlEeutpTUnTn5AZV24hTdiiXwfO1/yc="
+        "module_dot_bazel.patch": "sha256-igd4Ul9my/IEExUm3Nkr8AkZMX1kyJlZT5BCsAoOmns="
     }
 }
