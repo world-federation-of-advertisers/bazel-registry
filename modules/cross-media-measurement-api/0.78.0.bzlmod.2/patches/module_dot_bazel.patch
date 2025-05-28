@@ -6,3 +6,4 @@
 +    version = "0.78.0.bzlmod.2",
      repo_name = "wfa_measurement_proto",
  )
+ 
