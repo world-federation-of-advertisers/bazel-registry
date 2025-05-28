@@ -32,6 +32,7 @@
         "0.78.0"
     ],
     "yanked_versions": {
-        "0.74.0": "Broken http annotations"
+        "0.74.0": "Broken http annotations",
+        "0.77.0": "Bad patch checksum"
     }
 }
