@@ -30,11 +30,13 @@
         "0.76.0",
         "0.77.0",
         "0.78.0",
-        "0.78.0.bzlmod.1"
+        "0.78.0.bzlmod.1",
+        "0.78.0.bzlmod.2"
     ],
     "yanked_versions": {
         "0.74.0": "Broken http annotations",
         "0.77.0": "Bad patch checksum",
-        "0.78.0": "Bad patch checksum"
+        "0.78.0": "Bad patch checksum",
+        "0.78.0.bzlmod.1": "Patch missing newline at end"
     }
 }
