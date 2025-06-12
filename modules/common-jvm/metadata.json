@@ -45,7 +45,8 @@
         "0.105.0",
         "0.106.0",
         "0.107.0",
-        "0.107.1"
+        "0.107.1",
+        "0.107.2"
     ],
     "yanked_versions": {
         "0.82.0": "Spanner testing libraries are broken"
