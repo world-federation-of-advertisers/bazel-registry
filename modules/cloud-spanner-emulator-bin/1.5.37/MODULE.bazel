@@ -1,0 +1,13 @@
+module(
+    name = "cloud-spanner-emulator-bin",
+    version = "1.5.37",
+)
+
+bazel_dep(
+    name = "platforms",
+    version = "1.0.0",
+)
+bazel_dep(
+    name = "bazel_skylib",
+    version = "1.7.1",
+)
