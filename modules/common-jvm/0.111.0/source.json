@@ -4,6 +4,6 @@
     "strip_prefix": "common-jvm-0.111.0",
     "patch_strip": 0,
     "patches": {
-        "module_dot_bazel.patch": "sha256-HS6t4jN3OqV5MvSbbCNHOxUEBMdQ2oVjHxlG24EAkXM="
+        "module_dot_bazel.patch": "sha256-kVScpg0Wsj5P6950mANBahP92zpOsp9gAncEhgndAos="
     }
 }
