@@ -3,7 +3,7 @@
     "integrity": "sha256-KQT7SLMwhKOn4x2q8chLAV//vGE8AQhsM1nLikWrCvM=",
     "strip_prefix": "rules_kotlin_jvm-0.7.0",
     "patches": {
-        "module_dot_bazel.patch": "sha256-95z/m2OMSRwMDxwVmpQVNO0P+ZuXYERjw7enZQTJQGc="
+        "module_dot_bazel.patch": "sha256-oELz2zLLfCF3ApbWD3gzqarwa+tcUSIDqfyuQOMK5Xs="
     },
     "patch_strip": 0
 }
