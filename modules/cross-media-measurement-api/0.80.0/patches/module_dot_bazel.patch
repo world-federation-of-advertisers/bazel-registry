@@ -1,0 +1,10 @@
+--- MODULE.bazel
++++ MODULE.bazel
+@@ -1,6 +1,7 @@
+ module(
+     name = "cross-media-measurement-api",
+     repo_name = "wfa_measurement_proto",
++    version = "0.80.0",
+ )
+ 
+ # Bazel Central Registry deps.
