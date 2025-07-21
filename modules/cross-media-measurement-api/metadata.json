@@ -32,7 +32,8 @@
         "0.78.0",
         "0.78.0.bzlmod.1",
         "0.78.0.bzlmod.2",
-        "0.79.0"
+        "0.79.0",
+        "0.80.0"
     ],
     "yanked_versions": {
         "0.74.0": "Broken http annotations",
