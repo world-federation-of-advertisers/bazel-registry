@@ -1,0 +1,9 @@
+{
+    "url": "https://github.com/SanjayVas/cloud-spanner-emulator/releases/download/v1.5.41.libcxx.1/binaries-linux-amd64.tar.gz",
+    "integrity": "sha256-g0lln8j51tvqQwqAgs5iUjSWJs0EPKH55oGLBrw1NoA=",
+    "patches": {
+        "add_build_file.patch": "sha256-TTo/ppo3N+kJxE9dYlJO2SwceIxNjFQRYGJ6dChzZNY=",
+        "module_dot_bazel.patch": "sha256-ZkuOhMy56UaISxQ4gL9PaVYLZ3X3l7wWqs/AEPSiz+U="
+    },
+    "patch_strip": 0
+}
