@@ -1,0 +1,9 @@
+{
+    "url": "https://github.com/world-federation-of-advertisers/rules_cue/archive/refs/tags/v0.4.1.tar.gz",
+    "integrity": "sha256-KCFoohqFRSj0eezK7v543pgTqTX4+cAAzUPhZx/M7r8=",
+    "strip_prefix": "rules_cue-0.4.1",
+    "patch_strip": 0,
+    "patches": {
+        "module_dot_bazel.patch": "sha256-6WWRAOCuKGGYJLBx+ftRF6OvIdETsVNgMGRORpoa7xo="
+    }
+}
