@@ -64,10 +64,11 @@
         "0.123.0",
         "0.124.0",
         "0.124.1",
-        "0.124.1.bzlmod.1"
+        "0.124.1.bzlmod.1",
+        "0.124.2"
     ],
     "yanked_versions": {
-        "0.82.0": "Spanner testing libraries are broken",
-        "0.124.1": "Wrong MODULE.bazel"
+        "0.124.1": "Wrong MODULE.bazel",
+        "0.82.0": "Spanner testing libraries are broken"
     }
 }
