@@ -1,0 +1,27 @@
+--- MODULE.bazel
++++ MODULE.bazel
+@@ -1,5 +1,6 @@
+ module(
+     name = "common-jvm",
++    version = "0.124.1",
+     bazel_compatibility = [">=7.0.0"],
+     repo_name = "wfa_common_jvm",
+ )
+@@ -39,7 +40,7 @@
+ )
+ bazel_dep(
+     name = "cloud-spanner-emulator-bin",
+-    version = "1.5.37.libcxx.1",
++    version = "1.5.41.libcxx.1",
+     repo_name = "cloud_spanner_emulator",
+ )
+ 
+@@ -275,7 +276,7 @@
+         "org.jetbrains.kotlinx:kotlinx-coroutines-bom:" + KOTLINX_COROUTINES_VERSION,
+         "com.google.protobuf:protobuf-bom:" + PROTOBUF_JAVA_VERSION,
+         "io.grpc:grpc-bom:" + GRPC_JAVA_VERSION,
+-        "com.google.cloud:libraries-bom:26.62.0",
++        "com.google.cloud:libraries-bom:26.65.0",
+         "software.amazon.awssdk:bom:" + AWS_JAVA_SDK_VERSION,
+         "io.opentelemetry:opentelemetry-bom:1.42.1",
+         "org.testcontainers:testcontainers-bom:1.21.3",
