@@ -1,0 +1,99 @@
+module(
+    name = "rules_kotlin_jvm",
+    version = "0.10.0",
+    repo_name = "wfa_rules_kotlin_jvm",
+)
+
+KOTLIN_RELEASE_VERSION = "2.1.21"  # Compatible with rules_kotlin version.
+
+KOTLINX_COROUTINES_VERSION = "1.10.2"
+
+GRPC_JAVA_VERSION = "1.75.0"
+
+GRPC_KOTLIN_VERSION = "1.5.0"
+
+PROTOBUF_JAVA_VERSION = "4.29.5"  # Compatible with protobuf version.
+
+bazel_dep(
+    name = "bazel_skylib",
+    version = "1.7.1",
+)
+bazel_dep(
+    name = "rules_java",
+    version = "8.15.2",
+)
+bazel_dep(
+    name = "rules_kotlin",
+    version = "2.1.10",
+)
+bazel_dep(
+    name = "rules_jvm_external",
+    version = "6.8",
+)
+bazel_dep(
+    name = "protobuf",
+    version = "29.5",
+    repo_name = "com_google_protobuf",
+)
+
+maven = use_extension("@rules_jvm_external//:extensions.bzl", "maven")
+maven.artifact(
+    artifact = "protoc-gen-grpc-kotlin",
+    classifier = "jdk8",
+    group = "io.grpc",
+    version = GRPC_KOTLIN_VERSION,
+)
+maven.artifact(
+    testonly = True,
+    artifact = "kotlin-test",
+    group = "org.jetbrains.kotlin",
+)
+maven.install(
+    artifacts = [
+        "org.jetbrains.kotlin:kotlin-stdlib",
+        "org.jetbrains.kotlin:kotlin-reflect",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core",
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm",
+        "io.grpc:grpc-api",
+        "io.grpc:grpc-protobuf",
+        "io.grpc:grpc-stub",
+        "io.grpc:grpc-kotlin-stub:" + GRPC_KOTLIN_VERSION,
+        # TODO(bazelbuild/bazel-worker-api/issues#14): Remove versions when fixed.
+        "com.google.protobuf:protobuf-java:" + PROTOBUF_JAVA_VERSION,
+        "com.google.protobuf:protobuf-java-util:" + PROTOBUF_JAVA_VERSION,
+        "com.google.protobuf:protobuf-kotlin:" + PROTOBUF_JAVA_VERSION,
+    ],
+    boms = [
+        "org.jetbrains.kotlin:kotlin-bom:" + KOTLIN_RELEASE_VERSION,
+        "org.jetbrains.kotlinx:kotlinx-coroutines-bom:" + KOTLINX_COROUTINES_VERSION,
+        "com.google.protobuf:protobuf-bom:" + PROTOBUF_JAVA_VERSION,
+        "io.grpc:grpc-bom:" + GRPC_JAVA_VERSION,
+    ],
+    exclusions = [
+        # protobuf-java and protobuf-javalite cannot coexist.
+        "com.google.protobuf:protobuf-javalite",
+    ],
+    fail_if_repin_required = True,
+    fetch_sources = True,  # For IDE integration.
+    known_contributing_modules = [
+        "bazel_worker_java",
+        "rules_kotlin_jvm",
+    ],
+    lock_file = "//:maven_install.json",
+    resolver = "maven",
+    strict_visibility = True,
+)
+use_repo(maven, "maven")
+
+http_file = use_repo_rule("@bazel_tools//tools/build_defs/repo:http.bzl", "http_file")
+
+http_file(
+    name = "protoc_gen_grpc_java",
+    executable = True,
+    sha256 = "59366fb58a19efd4e3674c1568e94ef167816151acfaad02fa4ef04bbcab293d",
+    url = "https://repo1.maven.org/maven2/io/grpc/protoc-gen-grpc-java/{version}/protoc-gen-grpc-java-{version}-linux-x86_64.exe".format(
+        version = GRPC_JAVA_VERSION,
+    ),
+)
+
+register_toolchains("//kotlin:kotlin_toolchain")
