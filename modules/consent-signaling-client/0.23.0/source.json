@@ -1,0 +1,9 @@
+{
+    "url": "https://github.com/world-federation-of-advertisers/consent-signaling-client/archive/refs/tags/v0.23.0.tar.gz",
+    "integrity": "sha256-Cgsy6b4/8CNZvKqKroaFq+4VRYgO7rmAlKikaRy6r3I=",
+    "strip_prefix": "consent-signaling-client-0.23.0",
+    "patch_strip": 0,
+    "patches": {
+        "module_dot_bazel.patch": "sha256-Dmp6MFdjJnUSxJO80ME7LO34kR/kN7R7gqayQB/VmPc="
+    }
+}
