@@ -1,0 +1,60 @@
+module(
+    name = "common-cpp",
+    version = "0.14.0",
+    repo_name = "wfa_common_cpp",
+)
+
+# Bazel Central Registry modules.
+bazel_dep(
+    name = "rules_cc",
+    version = "0.2.0",
+)
+bazel_dep(
+    name = "rules_proto",
+    version = "7.1.0",
+)
+bazel_dep(
+    name = "abseil-cpp",
+    version = "20250814.0",
+    repo_name = "com_google_absl",
+)
+bazel_dep(
+    name = "googletest",
+    version = "1.17.0",
+    repo_name = "com_google_googletest",
+)
+bazel_dep(
+    name = "protobuf",
+    version = "32.1",
+    repo_name = "com_google_protobuf",
+)
+bazel_dep(
+    name = "boringssl",
+    version = "0.20241209.0",
+)
+bazel_dep(
+    name = "riegeli",
+    version = "0.0.0-20250822-9f2744d",
+    repo_name = "com_google_riegeli",
+)
+
+http_archive = use_repo_rule("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+
+http_archive(
+    name = "farmhash",
+    build_file_content = """
+package(default_visibility = ["//visibility:public"])
+
+cc_library(
+    name = "farmhash",
+    hdrs = ["src/farmhash.h"],
+    srcs = ["src/farmhash.cc"],
+)
+""",
+    sha256 = "18392cf0736e1d62ecbb8d695c31496b6507859e8c75541d7ad0ba092dc52115",
+    strip_prefix = "farmhash-0d859a811870d10f53a594927d0d0b97573ad06d",
+    urls = [
+        # 2019-05-13, final version before repo was archived
+        "https://github.com/google/farmhash/archive/0d859a811870d10f53a594927d0d0b97573ad06d.tar.gz",
+    ],
+)
