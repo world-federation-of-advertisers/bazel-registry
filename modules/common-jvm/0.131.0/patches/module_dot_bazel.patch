@@ -1,0 +1,29 @@
+--- MODULE.bazel
++++ MODULE.bazel
+@@ -1,5 +1,6 @@
+ module(
+     name = "common-jvm",
++    version = "0.131.0",
+     bazel_compatibility = [">=7.0.0"],
+     repo_name = "wfa_common_jvm",
+ )
+@@ -253,13 +254,17 @@
+         "org.liquibase:liquibase-core:4.33.0",
+         "com.google.cloudspannerecosystem:liquibase-spanner:4.32.0",
+ 
++        # Math library.
++        "org.apache.commons:commons-math3:3.6.1",
++        "org.apache.commons:commons-numbers-gamma:1.1",
++
+         # CSV library.
+         "com.opencsv:opencsv:5.6",
+ 
+         # Riegeli Decompressor
+-        "org.apache.commons:commons-compress:1.28.0",
++        "org.apache.commons:commons-compress:1.22",
+         "org.brotli:dec:0.1.2",
+-        "com.github.luben:zstd-jni:1.5.7-6",
++        "com.github.luben:zstd-jni:1.5.2-5",
+     ],
+     # Note that order matters here, where earlier BOMs "win".
+     boms = [
