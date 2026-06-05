@@ -1,0 +1,9 @@
+{
+    "url": "https://github.com/world-federation-of-advertisers/common-jvm/archive/refs/tags/v0.142.0.tar.gz",
+    "integrity": "sha256-wbw/7APq+69OEl33A6a2DJOEuS4ojv1YAjQXKyISAqg=",
+    "strip_prefix": "common-jvm-0.142.0",
+    "patch_strip": 0,
+    "patches": {
+        "module_dot_bazel.patch": "sha256-926tsqypKvqmhOrRPajEmEUmTMUfIhs50nFhmL23hz8="
+    }
+}
