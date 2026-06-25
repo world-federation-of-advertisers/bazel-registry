@@ -1,0 +1,9 @@
+--- MODULE.bazel
++++ MODULE.bazel
+@@ -1,5 +1,6 @@
+ module(
+     name = "shell-encryption",
++    version = "0.0.0-20260625-61c9af6",
+ )
+ 
+ bazel_dep(name = "tink_cc", version = "2.4.0", repo_name = "com_github_tink_crypto_tink_cc")
