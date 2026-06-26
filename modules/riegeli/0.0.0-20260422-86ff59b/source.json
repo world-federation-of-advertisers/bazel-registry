@@ -1,0 +1,9 @@
+{
+    "url": "https://github.com/google/riegeli/archive/86ff59bfec52a05efda32d3b0820781b6aa6146d.tar.gz",
+    "integrity": "sha256-8hkOnUtOhhOjHfOdzZoEVw1sOIbYIPAo+Hihh6ZiyoY=",
+    "strip_prefix": "riegeli-86ff59bfec52a05efda32d3b0820781b6aa6146d",
+    "patch_strip": 0,
+    "patches": {
+        "module_dot_bazel.patch": "sha256-k/GyswpN95X0FZrHXEDamQG38XIaXIBm5xcmlRwU894="
+    }
+}
