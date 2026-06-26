@@ -1,0 +1,9 @@
+{
+    "url": "https://github.com/google/shell-encryption/archive/61c9af6da23c08358c3c595e810f7f4d9a919345.tar.gz",
+    "integrity": "sha256-YV36YvUVt3C5XBGdw04Yuo3VgI74xb3RN4Ay5KgbfbE=",
+    "strip_prefix": "shell-encryption-61c9af6da23c08358c3c595e810f7f4d9a919345",
+    "patch_strip": 0,
+    "patches": {
+        "module_dot_bazel.patch": "sha256-dAdjXt3u47d8X5dmfCodCik2UzRMSasTEWq4AupTLsg="
+    }
+}

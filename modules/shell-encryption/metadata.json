@@ -5,7 +5,8 @@
         "github:google/shell-encryption"
     ],
     "versions": [
-        "0.0.0-20241214-b381c4e"
+        "0.0.0-20241214-b381c4e",
+        "0.0.0-20260625-61c9af6"
     ],
     "yanked_versions": {}
 }
