@@ -1,0 +1,11 @@
+--- MODULE.bazel
++++ MODULE.bazel
+@@ -1,6 +1,8 @@
+ module(
+     name = "riegeli",
+     repo_name = "com_google_riegeli",
++    version = "0.0.0-20260422-86ff59b",
++    bazel_compatibility = [">=9.0.0"],
+ )
+ 
+ bazel_dep(
