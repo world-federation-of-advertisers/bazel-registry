@@ -1,0 +1,13 @@
+--- MODULE.bazel
++++ MODULE.bazel
+@@ -6,8 +6,8 @@
+ ###############################################################################
+ 
+ module(
+-    name = "private_join_and_compute",
+-    version = "0.0.1",
++    name = "private-join-and-compute",
++    version = "0.0.0-20260309-950c5e4",
+ )
+ 
+ bazel_dep(name = "rules_apple", version = "3.19.0")
