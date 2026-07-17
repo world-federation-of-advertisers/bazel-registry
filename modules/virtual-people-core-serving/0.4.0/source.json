@@ -1,0 +1,9 @@
+{
+    "url": "https://github.com/world-federation-of-advertisers/virtual-people-core-serving/archive/refs/tags/v0.4.0.tar.gz",
+    "integrity": "sha256-ctGp8KsKqjIrFBQjvtbWyds1DC0KuUvO19+eyvN8rt8=",
+    "strip_prefix": "virtual-people-core-serving-0.4.0",
+    "patch_strip": 0,
+    "patches": {
+        "module_dot_bazel.patch": "sha256-mSiBGZ1kXIGcXETDhAgGcVzN7QDF6B4fs0FAOELuo54="
+    }
+}
