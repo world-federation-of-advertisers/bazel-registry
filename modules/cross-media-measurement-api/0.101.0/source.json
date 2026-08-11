@@ -1,0 +1,9 @@
+{
+    "url": "https://github.com/world-federation-of-advertisers/cross-media-measurement-api/archive/refs/tags/v0.101.0.tar.gz",
+    "integrity": "sha256-YIc93fERFnO9+ih9fPLgEY4bSNfs6OIaUNiiphD5AP0=",
+    "strip_prefix": "cross-media-measurement-api-0.101.0",
+    "patch_strip": 0,
+    "patches": {
+        "module_dot_bazel.patch": "sha256-2sXeIPKk5ZQfsjCNJnlEPkc8DPsfYS1W4J1hb1WyVZc="
+    }
+}
