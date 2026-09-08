@@ -14,5 +14,7 @@
         "0.9.0",
         "0.10.0"
     ],
-    "yanked_versions": {}
+    "yanked_versions": {
+        "0.9.0": "Contains redundant top-level LabelerEvent.placement field"
+    }
 }
