@@ -4,6 +4,6 @@
   "strip_prefix": "virtual-people-core-serving-0.6.0",
   "patch_strip": 0,
   "patches": {
-    "module_dot_bazel.patch": "sha256-JbTu4pr5VRf4d7beLD8E03j91bZaqSp1otq7ep4jdpo="
+    "module_dot_bazel.patch": "sha256-CQshSTKwMxgZyu8vlIQYDcOT4W0xUdV6NyRnEeMbdyw="
   }
 }
