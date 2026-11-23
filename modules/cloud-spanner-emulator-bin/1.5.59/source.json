@@ -1,0 +1,9 @@
+{
+    "url": "https://storage.googleapis.com/cloud-spanner-emulator/releases/1.5.59/cloud-spanner-emulator_linux_amd64-1.5.59.tar.gz",
+    "integrity": "sha256-OU/8B1g51+kwNozm6XiJ1xOFanz6qbTJ+nCPiCy8TF8=",
+    "patches": {
+        "add_build_file.patch": "sha256-TTo/ppo3N+kJxE9dYlJO2SwceIxNjFQRYGJ6dChzZNY=",
+        "module_dot_bazel.patch": "sha256-32DusXwoI1yQdyfI+HLyWTK7anQTnBNURkFK9dtUCto="
+    },
+    "patch_strip": 0
+}
